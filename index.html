@@ -21,7 +21,9 @@
         </ul>
     </div>
 </header>
-<section class="hero">
+
+<!-- ===== 简洁 Hero 区域（带个人照片） ===== -->
+<section class="hero hero-compact">
     <div class="hero-content">
         <div class="hero-text">
             <p class="hero-greeting">Welcome to my lab</p>
@@ -32,15 +34,15 @@
                 <span class="typewriter-text">Gut–Brain Axis · m6A Epitranscriptomics · Multi-omics</span>
             </div>
             <div class="hero-buttons">
-                <a href="publications.html" class="btn-primary hero-btn outline">View Publications</a>
+                <a href="publications.html" class="btn-primary hero-btn">View Publications</a>
             </div>
         </div>
         <div class="hero-image">
-            <!-- 果蝇神经系统示意图：请将实际图片命名为 fly_brain.jpg 放入 assets/img/ -->
-            <img src="assets/img/fly_brain.jpg" alt="Drosophila neural system illustration"
+            <!-- 使用您的个人照片 -->
+            <img src="assets/img/myphoto.jpg" alt="Yang Meng"
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder" style="display:none; align-items:center; justify-content:center; background:rgba(255,255,255,0.08); border-radius:20px; padding:1rem; backdrop-filter:blur(4px); border:1px solid rgba(255,255,255,0.2); height:100%; min-height:200px; color:rgba(255,255,255,0.7); font-size:0.9rem;">
-                <i class="fas fa-brain" style="font-size:3rem; margin-right:1rem;"></i> Drosophila Brain (Image)
+            <div class="image-placeholder" style="display:none; align-items:center; justify-content:center; background:rgba(255,255,255,0.05); border-radius:50%; padding:1rem; border:1px solid rgba(255,255,255,0.15); width:180px; height:180px; color:rgba(255,255,255,0.6); font-size:0.9rem;">
+                <i class="fas fa-user-circle" style="font-size:3rem;"></i>
             </div>
         </div>
     </div>
@@ -49,77 +51,64 @@
         <i class="fas fa-chevron-down"></i>
     </div>
 </section>
-<div class="page-wrap">
-    <div class="resume-card">
-        <aside class="sidebar">
-            <img src="assets/img/myphoto.jpg" alt="Yang Meng" class="profile-photo"
-                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22130%22 height=%22130%22%3E%3Ccircle cx=%2265%22 cy=%2265%22 r=%2260%22 fill=%22%23d4e0ec%22/%3E%3Ctext x=%2265%22 y=%2275%22 font-size=%2214%22 text-anchor=%22middle%22 fill=%22%233f607d%22%3EPhoto%3C/text%3E%3C/svg%3E'">
-            <div class="name">Yang Meng</div>
-            <div class="main-title">Ph.D. Candidate in Physiology</div>
-            <div class="research-interest">Research: Innate Immunity & Sleep</div>
 
-            <div class="section-title">Contact</div>
-            <div class="contact-item"><span class="contact-icon"><i class="fas fa-envelope"></i></span> mantouym@163.com</div>
-            <div class="contact-item"><span class="contact-icon"><i class="fas fa-map-pin"></i></span> College of Life Sciences<br>
-                      Hunan Normal University, P.R. China</div>
+<!-- ===== 主要内容区（精简） ===== -->
+<div class="page-wrap home-page">
+    <!-- About Me -->
+    <section class="home-section">
+        <h2 class="section-title">About Me</h2>
+        <p class="home-about-text">
+            I study the intersection of <strong>innate immunity, gut microbiota, and sleep rhythms</strong>,
+            integrating <strong>m6A epitranscriptomics</strong> with <strong>multi-omics analyses</strong>
+            (transcriptomics, proteomics, metabolomics, and 16S) in <i>Drosophila</i> and mouse models.
+            Self-taught in bioinformatics (R / Perl).
+        </p>
+        <!-- 新增邮箱联系方式 -->
+        <p class="contact-email">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:mantouym@163.com">mantouym@163.com</a>
+        </p>
+    </section>
 
-            <div class="section-title">Education</div>
-            <div class="edu-item"><div class="edu-date">2024.09 – Present</div><div class="edu-desc">Hunan Normal University · Ph.D. in Physiology</div></div>
-            <div class="edu-item"><div class="edu-date">2020.09 – 2023.07</div><div class="edu-desc">South China Normal University · M.S. in Biochemistry & Molecular Biology</div></div>
-            <div class="edu-item"><div class="edu-date">2016.09 – 2020.07</div><div class="edu-desc">Henan Agricultural University · B.S. in Agronomy</div></div>
+    <!-- Research Interests (标签) -->
+    <section class="home-section">
+        <h2 class="section-title">Research Interests</h2>
+        <div class="interest-tags">
+            <span class="tag"><i class="fas fa-dna"></i> m6A Epitranscriptomics</span>
+            <span class="tag"><i class="fas fa-code"></i> Bioinformatics (R/Perl)</span>
+            <span class="tag"><i class="fas fa-seedling"></i> Fly / Mouse Models</span>
+            <span class="tag"><i class="fas fa-chart-bar"></i> Multi-omics Integration</span>
+            <span class="tag"><i class="fas fa-brain"></i> Neuroimmunology</span>
+            <span class="tag"><i class="fas fa-microbiome"></i> Gut Microbiota</span>
+        </div>
+    </section>
 
-            <div class="section-title">Honors</div>
-            <ul class="award-list">
-                <li>Selected for the 2025 CAST Young Talent Cultivation Program for PhD Students</li>
-            </ul>
-        </aside>
-
-        <main class="main">
-            <div class="section-title">About Me</div>
-            <p class="hero-intro">
-                I study the intersection of <strong>innate immunity, gut microbiota, and sleep rhythms</strong>,
-                integrating <strong>m6A epitranscriptomics</strong> with <strong>multi-omics analyses</strong>
-                (transcriptomics, proteomics, metabolomics, and 16S) in <i>Drosophila</i> and mouse models.
-                Self-taught in bioinformatics (R / Perl).
-            </p>
-
-            <div class="tech-highlight">
-                <span><i class="fas fa-dna"></i> m6A Epitranscriptomics</span>
-                <span><i class="fas fa-code"></i> Bioinformatics (R/Perl)</span>
-                <span><i class="fas fa-seedling"></i> Fly / Mouse Models</span>
-                <span><i class="fas fa-chart-bar"></i> Multi-omics Integration</span>
+    <!-- News（保留2条） -->
+    <section class="home-section">
+        <h2 class="section-title">News</h2>
+        <div class="news-list">
+            <div class="news-item">
+                <span class="news-date">May 2026</span>
+                <span class="news-text">Paper accepted in <em>Genome Research</em> on tissue-specific m6A reprogramming.</span>
             </div>
-
-            <div class="section-title">Selected Publications</div>
-            <div class="legend-note"># co-first author, * corresponding author</div>
-
-            <article class="pub-item featured">
-                <div class="pub-authors"><strong>Yang M<sup>#</sup></strong>, Zheng X<sup>#</sup>, Fan J<sup>#</sup>, Cheng W<sup>#</sup>, Yan TM, Lai Y, Zhang N, Lu Y, Qi J, Huo Z, Xu Z, Huang J, Jiao Y, Liu B, Pang R, Zhong X, Huang S, Luo GZ, Lee G, Jobin C, Eren AM, Chang EB, Wei H*, Pan T*, Wang X*.</div>
-                <div class="pub-title">Antibiotic-induced gut microbiota dysbiosis modulates host transcriptome and m6A epitranscriptome via bile acid metabolism.</div>
-                <div><span class="pub-journal">Advanced Science</span> 2024, 11(28):e2307981. <span class="pub-impact">IF=14.3 / JCR Q1</span></div>
-            </article>
-
-            <article class="pub-item featured">
-                <div class="pub-authors">Li J<sup>#</sup>, Liu A<sup>#</sup>, Liu R, Xu Z, <strong>Yang M</strong>, Zheng X, Tian Y, Wen S, Cao K, Lu D, Huang C, Yan TM, Wang X*.</div>
-                <div class="pub-title">Tissue-specific mRNA m6A reprogramming unveils vitamin-driven post-transcriptional regulation in mice.</div>
-                <div><span class="pub-journal">Genome Research</span> 2026 May 11. <span class="pub-impact">IF=5.5 / JCR Q1</span></div>
-            </article>
-
-            <article class="pub-item featured">
-                <div class="pub-authors">Su J<sup>#</sup>, <strong>Yang M</strong>, Wang X, Wu P*, Zhai Z*.</div>
-                <div class="pub-title">Intracellular Aβ42 Sequestration by a Serine Protease Mitigates Neurotoxicity in a <i>Drosophila</i> Alzheimer's Disease Model.</div>
-                <div><span class="pub-journal">Advanced Science</span> 2026, 13(26):e17862. <span class="pub-impact">IF=14.3 / JCR Q1</span></div>
-            </article>
-
-            <a href="publications.html" class="btn-primary">View All Publications →</a>
-
-            <div class="footer-note">
-                <span>Updated: May 2026 · Hunan Normal University</span>
-                <span>YANG MENG · Academic Website</span>
+            <div class="news-item">
+                <span class="news-date">Apr 2026</span>
+                <span class="news-text">Selected for the 2025 CAST Young Talent Cultivation Program.</span>
             </div>
-        </main>
+        </div>
+    </section>
+
+    <!-- 查看全部文章按钮 -->
+    <div style="text-align: center; margin-top: 1rem;">
+        <a href="publications.html" class="btn-primary" style="font-size:1rem; padding:0.7rem 2.2rem;">View All Publications →</a>
+    </div>
+
+    <div class="footer-note">
+        <span>Updated: May 2026 · Hunan Normal University</span>
+        <span>YANG MENG · Academic Website</span>
     </div>
 </div>
+
 <script src="js/main.js"></script>
 </body>
 </html>
