@@ -674,6 +674,31 @@ a:hover { color: var(--accent); }
     margin: 0 auto;
 }
 
+/* 首页邮箱联系方式 */
+.contact-email {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: var(--primary-dark);
+}
+
+.contact-email i {
+    margin-right: 0.6rem;
+    color: var(--accent);
+    width: 1.2rem;
+    text-align: center;
+}
+
+.contact-email a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-email a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .nav-toggle { display: block; }
 
